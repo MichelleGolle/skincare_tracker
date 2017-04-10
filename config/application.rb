@@ -21,5 +21,14 @@ module SkincareTracker
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    unless Rails.env.production?
+      # Configure Browserify to use babelify to compile ES6
+
+# skincare_tracker/app/assets/javascripts
+
+      config.browserify_rails.commandline_options = "-t [ babelify --presets [ es2015 react ] ]"
+      # Run on all javascript files
+      config.browserify_rails.force = true
+    end
   end
 end
