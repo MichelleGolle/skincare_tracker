@@ -12,7 +12,7 @@ class NavBar extends React.Component {
           </Navbar.Brand>
         </Navbar.Header>
         <Nav pullRight>
-          <NavItem eventKey={1} href="#">Log In / Sign Up</NavItem>
+          <NavItem eventKey={1} href="login">Log In</NavItem>
         </Nav>
       </Navbar>
     )

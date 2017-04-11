@@ -4,6 +4,7 @@ class Home extends React.Component {
       <div>
         <NavBar />
         <About />
+        {this.props.children}
       </div>
     )
   }
