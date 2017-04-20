@@ -2,6 +2,7 @@ import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 
+// TODO: this.props.currentUser is undefined
 class NavBar extends React.Component {
   render () {
     return (
@@ -12,7 +13,9 @@ class NavBar extends React.Component {
           </Navbar.Brand>
         </Navbar.Header>
         <Nav pullRight>
-          <NavItem eventKey={1} href="login">Log In</NavItem>
+          {this.props.currentUser ?
+          <NavItem href="logout">{'Log Out'}</NavItem> :
+          <NavItem href="login">{'Log In'}</NavItem>}
         </Nav>
       </Navbar>
     )

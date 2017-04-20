@@ -6,5 +6,4 @@ window.Home = global.Home = require("./components/home.js.jsx").default
 window.NavBar = global.NavBar = require("./components/navbar.js.jsx").default
 window.About = global.About = require("./components/about.js.jsx").default
 window.App = global.App = require("./components/app.js.jsx").default
-window.Login = global.Login = require("./components/login.js.jsx").default
 window.NotFound = global.NotFound = require("./components/notfound.js.jsx").default

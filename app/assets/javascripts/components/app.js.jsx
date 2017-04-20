@@ -6,12 +6,12 @@ import {
 
 class App extends React.Component {
   render () {
+    const currentUser = this.props.currentUser;
     return (
       <Router>
-        <Route exact path='/' component={Home}>
-          <IndexRoute component={Home} />
-          // TODO: need to change login route to match devise naming
-          <Route path='/login' component={Login} />
+        <Route exact path='/' render={()=><Home currentUser={currentUser}/>}>
+          <Route path='/login' />
+          <Route path='/logout' />
           <Route path='*' component={NotFound} />
         </Route>
       </Router>
