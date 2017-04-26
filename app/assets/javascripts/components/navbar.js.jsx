@@ -2,14 +2,14 @@ import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 
-// TODO: this.props.currentUser is undefined
+
 class NavBar extends React.Component {
   render () {
     return (
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">Skincare Tracker</a>
+            <a href="/">Skincare Tracker</a>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav pullRight>
