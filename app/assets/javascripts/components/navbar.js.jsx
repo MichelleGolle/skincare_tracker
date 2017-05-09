@@ -15,7 +15,7 @@ class NavBar extends React.Component {
         <Nav pullRight>
           {this.props.currentUser ?
           <NavItem href="logout">{'Log Out'}</NavItem> :
-          <NavItem href="login">{'Log In'}</NavItem>}
+          <NavItem href="login">{'Log In / Sign Up'}</NavItem>}
         </Nav>
       </Navbar>
     )

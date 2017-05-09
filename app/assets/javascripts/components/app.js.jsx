@@ -11,7 +11,8 @@ class App extends React.Component {
       <Router>
         <Home currentUser={currentUser}>
           <Route path='/login' />
-          <Route path="/logout" />
+          <Route path='/logout' />
+          <Route path='/users/dashboard' component={UserDashboard} />
         </Home>
       </Router>
     )
