@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>SkincareTracker</title>
+
+    <script src="https://use.fontawesome.com/5d12090220.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <%= csrf_meta_tags %>
 
@@ -10,6 +13,11 @@
   </head>
 
   <body>
+    <% flash.each do |type, message| %>
+      <div class="alert flash <%= type %>">
+        <%= message %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
