@@ -3,7 +3,10 @@ class Home extends React.Component {
     return (
       <div>
         <NavBar currentUser={this.props.currentUser} />
-        <About />
+        {this.props.currentUser ?
+          <UserDashboard currentUser={this.props.currentUser}/> :
+          <About />
+        }
         {this.props.children}
       </div>
     )

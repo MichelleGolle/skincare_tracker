@@ -7,7 +7,5 @@ Rails.application.routes.draw do
     get 'login', to: 'devise/sessions#new'
     get 'logout', to: 'devise/sessions#destroy'
   end
-
-  get 'users/dashboard', to: 'users/users#show', as: :user_dashboard
-
+  
 end
